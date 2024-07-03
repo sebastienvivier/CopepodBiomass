@@ -18,5 +18,9 @@ CarbonMass_Atlanteco.csv: Mean, Min, Max ICWs of AtlantECO for each Copepod Spec
 2) Second Step: "Rapport work= Grouping strategies + Inverse model + Result of inverse model and evaluation of the ICWs of AtlantECO"
 
 
+###___ Inversemodel_test.ipynb
 
+Input Data:  Abundance_IM_final.csv (Abundance final COPEPOD)
+
+=> Construction of simulated data (Biomasse totale of samples using Abundance_IM_final.csv and AtlantECO ICWs
 
