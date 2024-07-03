@@ -3,6 +3,11 @@ All data Available on meso: /net/meso/work/svivier/Git/Data/
 
 ###___Description of the output data of COPEPOD_DATA.ipynb 
 
+Input Data:
+'/net/meso/work/svivier/COPEPOD_data/Data_copepod/copepod__*/data_src/short-format/*.csv' #All data tht present Abundance and Biomass observation in COPEPOD: https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html
+
+Output:
+
 combined_csv.csv: All data from COPEPOD (https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html) with both: "Zooplankton biomass data and zooplankton abundance data "= 28 different Ship cruise
 Abundance.csv: Original Abundance data and Abundance data in ind/m^3
 Biomass.csv: Original Biomass data and Biomass data in mg.C/m^3
@@ -12,8 +17,12 @@ CarbonMass_matrix.csv: Biomass matrix (mg C/m^3): Line= unique_id (Samples), Col
 
 ###___Description of the  ICWs_evaluation_and_correction.ipynb 
 
-CarbonMass_Atlanteco.csv: Mean, Min, Max ICWs of AtlantECO for each Copepod Species
+Input Data:
+CarbonMass_Atlanteco.csv #Mean, Min, Max ICWs of AtlantECO for each Copepod Species
 
+Output Data:
+'Abundance_IM_final.csv' #Final abundance data used to evaluate AtlantECO ICWs and to improve these ICWs with inverse model (ind/m^3)
+'Biomass_IM_final.csv' #Final total biomass data used to evaluate AtlantECO ICWs and to improve these ICWs with inverse model (mg C/m^3)
 
 
 1)First Step:  Construction of the final datasets used to evaluate and improve (inverse model) the ICWs of AtlantECO: 'COPEPOD80_BIOMASS'= final Total biomass matrix and 'COPEPOD80_df_clean'= final abundance matrix: 'Abundance_IM_final.csv', 'Biomass_IM_final.csv'
@@ -23,10 +32,20 @@ CarbonMass_Atlanteco.csv: Mean, Min, Max ICWs of AtlantECO for each Copepod Spec
 
 ###___ Inversemodel_test.ipynb
 
-Input Data:  Abundance_IM_final.csv (Abundance final COPEPOD)
+Input Data:  
+Abundance_IM_final.csv #Abundance final COPEPOD
 
 => Construction of simulated data (Biomasse totale of samples) using Abundance_IM_final.csv and AtlantECO ICWs
 
-Output Data: IM_sensitivity.csv = Result for different grouping strategy and for informative and non-informative priors
+Output Data: 
+IM_sensitivity.csv #Result for different grouping strategy and for informative and non-informative priors
 
 
+###___FGs_Data.ipynb
+
+Input Data: 
+1) /net/kryo/work/public/shared/AtlantECO/BASE/AtlantECO-BASE-v1_microbiome_traditional_Copepoda_abund+biomass_20221220.csv #AtlantECO data
+2) trait.xlsx #FGs per Species and Traits per Species
+
+Output Data: 
+FGs_biomass.csv #Carbonmass data for each FGs (mg C/m^3)
