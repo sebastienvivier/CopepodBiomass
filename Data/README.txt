@@ -1,14 +1,14 @@
 All data Available on meso: /net/meso/work/svivier/Git/Data/
 
 
-###___Description of the output data of COPEPOD_DATA.ipynb 
+###___Description of the data of COPEPOD_DATA.ipynb 
 
 Input Data:
-'/net/meso/work/svivier/COPEPOD_data/Data_copepod/copepod__*/data_src/short-format/*.csv' #All data tht present Abundance and Biomass observation in COPEPOD: https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html
+'/net/meso/work/svivier/COPEPOD_data/Data_copepod/copepod__*/data_src/short-format/*.csv' #All data that present Abundance and Biomass observation in COPEPOD: https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html
 
 Output:
 
-combined_csv.csv: All data from COPEPOD (https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html) with both: "Zooplankton biomass data and zooplankton abundance data "= 28 different Ship cruise
+combined_csv.csv: All data from COPEPOD (https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html) with both: "Zooplankton biomass data and zooplankton abundance data "= 28 different Ship cruise combined in one .csv 
 Abundance.csv: Original Abundance data and Abundance data in ind/m^3
 Biomass.csv: Original Biomass data and Biomass data in mg.C/m^3
 MeasurementValue_matrix.csv: Abundance matrix (ind/m^3): Line= unique_id (Samples), Colonne= Taxa-Name
@@ -19,6 +19,8 @@ CarbonMass_matrix.csv: Biomass matrix (mg C/m^3): Line= unique_id (Samples), Col
 
 Input Data:
 CarbonMass_Atlanteco.csv #Mean, Min, Max ICWs of AtlantECO for each Copepod Species
+MeasurementValue_matrix.csv: Abundance matrix (ind/m^3): Line= unique_id (Samples), Colonne= Taxa-Name
+CarbonMass_matrix.csv: Biomass matrix (mg C/m^3): Line= unique_id (Samples), Colonne= One colone (Carbon Mass)
 
 Output Data:
 'Abundance_IM_final.csv' #Final abundance data used to evaluate AtlantECO ICWs and to improve these ICWs with inverse model (ind/m^3)
