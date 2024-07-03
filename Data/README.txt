@@ -1,3 +1,6 @@
+All data Available on meso: /net/meso/work/svivier/Git/Data/
+
+
 ###___Description of the output data of COPEPOD_DATA.ipynb 
 
 combined_csv.csv: All data from COPEPOD (https://www.st.nmfs.noaa.gov/copepod/search/by_dataset.html) with both: "Zooplankton biomass data and zooplankton abundance data "= 28 different Ship cruise
@@ -22,5 +25,8 @@ CarbonMass_Atlanteco.csv: Mean, Min, Max ICWs of AtlantECO for each Copepod Spec
 
 Input Data:  Abundance_IM_final.csv (Abundance final COPEPOD)
 
-=> Construction of simulated data (Biomasse totale of samples using Abundance_IM_final.csv and AtlantECO ICWs
+=> Construction of simulated data (Biomasse totale of samples) using Abundance_IM_final.csv and AtlantECO ICWs
+
+Output Data: IM_sensitivity.csv = Result for different grouping strategy and for informative and non-informative priors
+
 
