@@ -50,4 +50,9 @@ Input Data:
 2) trait.xlsx #FGs per Species and Traits per Species
 
 Output Data: 
-FGs_biomass.csv #Carbonmass data for each FGs (mg C/m^3)
+FGs_biomass.csv #Carbonmass data for each FGs (mg C/m^3) = input Data in CEPHALOPOD
+
+###___FGs_distribution.ipynb
+
+Input Data:
+
