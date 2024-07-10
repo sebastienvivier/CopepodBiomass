@@ -6,19 +6,16 @@ This repository contains scripts for analyzing copepod biomass data. Follow the 
 
 Ensure you have Anaconda or Miniconda installed on your machine. You can download and install Anaconda from [this link](https://www.anaconda.com/products/distribution).
 
-## Steps to Recreate the Environment
+## Steps to Use the right Environment
 
-### 1. Clone the GitHub repository to your local machine
 
-To clone the repository, you need to authenticate with GitHub. When prompted, enter your GitHub username and password. If you have two-factor authentication enabled, you may need to use a personal access token instead of your password. You can generate a personal access token from your GitHub account settings under Developer settings.
+cd CopepodBiomass/Script
 
-   ```bash
-   git clone https://github.com/sebastienvivier/CopepodBiomass.git
-   cd CopepodBiomass/Script
+conda activate /net/meso/work/svivier/.conda/envs/sebpy
 
-conda env create -f environment.yml
+python -m ipykernel install --user --name sebpy --display-name "Python (sebpy)"
 
-conda activate sebpy
+Use the "Python (sebpy)" Kernel to run the scripts
 
 
 
