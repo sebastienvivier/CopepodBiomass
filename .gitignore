@@ -1,7 +1,3 @@
 /Data/*
 !/Data/README.txt
-/Script/result_model.png
-/Script/ICW_Model_vs_AtlantECO.pdf
-/Script/cluster_traits_comparison.pdf
-/Script/GMM.pdf
-
+/Plots/*
