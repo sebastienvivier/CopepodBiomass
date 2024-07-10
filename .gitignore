@@ -1,3 +1,4 @@
 /Data/*
 !/Data/README.txt
 /Plots/*
+!/Plots/README.txt
